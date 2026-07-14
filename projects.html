@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Anzar Haider - Full Stack Developer. College Management, Inventory System, Weather App and more.">
+    <meta name="author" content="Anzar Haider">
+    <title>Projects | Anzar Haider</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== SCROLL PROGRESS BAR ========== -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="header" id="header">
+        <a href="index.html" class="logo">
+            Anzar <span>Haider</span>
+        </a>
+
+        <!-- Mobile Menu Icon -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume/Anzar_Haider_Resume.pdf" class="btn btn-nav" download>
+                <i class="bx bx-download"></i> Resume
+            </a>
+        </nav>
+    </header>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>My <span>Projects</span></h1>
+            <p>A collection of work I've built — from management systems to web apps.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="bx bx-chevron-right"></i>
+                <span>Projects</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects-page">
+
+        <!-- Search and Filter Bar -->
+        <div class="projects-controls">
+
+            <!-- Search Box -->
+            <div class="search-box">
+                <i class="bx bx-search"></i>
+                <input
+                    type="text"
+                    id="project-search"
+                    placeholder="Search projects..."
+                    aria-label="Search projects"
+                >
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" id="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="node">Node.js</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="mongodb">MongoDB</button>
+            </div>
+
+        </div>
+
+        <!-- Projects Count Display -->
+        <p class="projects-count" id="projects-count">Showing <span id="count-number">8</span> projects</p>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid all-projects" id="projects-grid">
+
+            <!-- Project 1: College Management -->
+            <div class="project-card" data-category="html javascript java mysql">
+                <div class="project-img">
+                    <img
+                        src="images/college-management.png"
+                        alt="College Management Website"
+                        onerror="this.src='https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>College Management System</h3>
+                    <p>A comprehensive web application for managing college operations — students, faculty, courses, attendance and results all in one platform.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Student Management</span>
+                        <span><i class="bx bx-check"></i> Faculty Records</span>
+                        <span><i class="bx bx-check"></i> Attendance Tracking</span>
+                        <span><i class="bx bx-check"></i> Result Management</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Portfolio Website -->
+            <div class="project-card" data-category="html javascript">
+                <div class="project-img">
+                    <img
+                        src="images/portfolio-website.png"
+                        alt="Personal Portfolio Website"
+                        onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>My professional portfolio built from scratch with a dark theme, CSS animations, smooth scrolling and fully responsive layout.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Dark Theme</span>
+                        <span><i class="bx bx-check"></i> Typing Animation</span>
+                        <span><i class="bx bx-check"></i> Fully Responsive</span>
+                        <span><i class="bx bx-check"></i> EmailJS Contact</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Inventory Management -->
+            <div class="project-card" data-category="html javascript node mongodb">
+                <div class="project-img">
+                    <img
+                        src="images/inventory-system.png"
+                        alt="Inventory Management System"
+                        onerror="this.src='https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Inventory Management System</h3>
+                    <p>A full-featured inventory system with product tracking, stock alerts, supplier management and order processing dashboard.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Product Tracking</span>
+                        <span><i class="bx bx-check"></i> Stock Alerts</span>
+                        <span><i class="bx bx-check"></i> Supplier Management</span>
+                        <span><i class="bx bx-check"></i> Order Processing</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Employee Management -->
+            <div class="project-card" data-category="html javascript java mysql">
+                <div class="project-img">
+                    <img
+                        src="images/employee-management.png"
+                        alt="Employee Management System"
+                        onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Employee Management System</h3>
+                    <p>An HR management system to handle employee records, attendance, payroll, leave management and department assignments.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Employee Records</span>
+                        <span><i class="bx bx-check"></i> Payroll Management</span>
+                        <span><i class="bx bx-check"></i> Leave Management</span>
+                        <span><i class="bx bx-check"></i> Department View</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Hospital Management -->
+            <div class="project-card" data-category="html javascript node mongodb">
+                <div class="project-img">
+                    <img
+                        src="images/hospital-management.png"
+                        alt="Hospital Management System"
+                        onerror="this.src='https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Hospital Management System</h3>
+                    <p>A complete hospital management platform for managing patients, doctors, appointments, billing and medical records efficiently.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Patient Management</span>
+                        <span><i class="bx bx-check"></i> Doctor Scheduling</span>
+                        <span><i class="bx bx-check"></i> Appointment Booking</span>
+                        <span><i class="bx bx-check"></i> Billing System</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Weather App -->
+            <div class="project-card" data-category="html javascript">
+                <div class="project-img">
+                    <img
+                        src="images/weather-app.png"
+                        alt="Weather App"
+                        onerror="this.src='https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather application using OpenWeatherMap API that shows current weather, temperature, humidity and a 5-day forecast.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Real-Time Weather</span>
+                        <span><i class="bx bx-check"></i> 5-Day Forecast</span>
+                        <span><i class="bx bx-check"></i> City Search</span>
+                        <span><i class="bx bx-check"></i> Weather Icons</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7: Calculator -->
+            <div class="project-card" data-category="html javascript">
+                <div class="project-img">
+                    <img
+                        src="images/calculator-app.png"
+                        alt="Calculator App"
+                        onerror="this.src='https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Calculator App</h3>
+                    <p>A clean, functional scientific calculator with standard arithmetic operations and a modern glassmorphism design.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Basic Operations</span>
+                        <span><i class="bx bx-check"></i> Keyboard Support</span>
+                        <span><i class="bx bx-check"></i> History Display</span>
+                        <span><i class="bx bx-check"></i> Modern UI</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8: Landing Page -->
+            <div class="project-card" data-category="html javascript">
+                <div class="project-img">
+                    <img
+                        src="images/landing-page.png"
+                        alt="Landing Page"
+                        onerror="this.src='https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600'"
+                    >
+                    <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Landing Page</h3>
+                    <p>A high-converting product landing page with smooth scroll animations, testimonials, feature highlights and a call-to-action section.</p>
+                    <div class="project-features">
+                        <span><i class="bx bx-check"></i> Smooth Animations</span>
+                        <span><i class="bx bx-check"></i> Testimonials</span>
+                        <span><i class="bx bx-check"></i> Feature Grid</span>
+                        <span><i class="bx bx-check"></i> CTA Section</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary" target="_blank">
+                            <i class="bx bx-link-external"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Anzar135" class="btn btn-small btn-outline" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="no-results" style="display: none;">
+            <i class="bx bx-search-alt"></i>
+            <p>No projects found. Try a different search or filter.</p>
+        </div>
+
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Anzar <span>Haider</span></a>
+                <p>Full Stack Developer &amp; Programmer based in Meerut, India.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Anzar135" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="https://linkedin.com/in/anzar-haider-81b428326" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                    <a href="https://www.instagram.com/sayyed_a_n_z_a_r" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://wa.me/+919012403970" target="_blank" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="mailto:anzarhaider135@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="bx bx-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="bx bx-chevron-right"></i> About</a></li>
+                    <li><a href="projects.html"><i class="bx bx-chevron-right"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="bx bx-chevron-right"></i> Contact</a></li>
+                    <li><a href="resume/Anzar_Haider_Resume.pdf" download><i class="bx bx-chevron-right"></i> Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="bx bx-envelope"></i> anzarhaider135@gmail.com</li>
+                    <li><i class="bx bx-phone"></i> +91 90124 03970</li>
+                    <li><i class="bx bx-map"></i> Meerut, UP, India</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Anzar Haider. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========== SCROLL TO TOP BUTTON ========== -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="bx bx-up-arrow-alt"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
